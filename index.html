@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/21809a0f78.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Chat App</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Chat App</h2>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <aside class="contacts">
+          <div class="container">
+            <div class="contact-card selected">
+              <img src="images/1.jpg" alt="" />
+              <p class="name">Milo</p>
+              <p class="message-date">08:43 am</p>
+            </div>
+          </div>
+        </aside>
+        <div class="message-body-section">
+          <div class="message-display"></div>
+          <form class="message-input-section">
+            <input
+              required
+              type="text"
+              name="message-input"
+              id="message-input"
+              placeholder="Type your message..."
+            />
+            <input type="submit" value="Send" id="send-btn" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
